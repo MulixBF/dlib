@@ -254,6 +254,7 @@ namespace dlib
             deserialize(item.boxes_overlap, in);
             unsigned long num_detectors = 0;
             deserialize(num_detectors, in);
+	    num_detectors = 3;
             item.w.resize(num_detectors);
             for (unsigned long i = 0; i < item.w.size(); ++i)
             {
